@@ -1,5 +1,5 @@
 const { Sequelize } = require('sequelize');
-require('dotenv').config();
+require('dotenv').config(); // Cargar variables de entorno desde el archivo .env
 
 // Creamos una instancia de Sequelize con la configuración desde el archivo .env
 const sequelize = new Sequelize(
@@ -23,3 +23,4 @@ const connectDB = async () => {
 };
 
 module.exports = { sequelize, connectDB };
+ 
